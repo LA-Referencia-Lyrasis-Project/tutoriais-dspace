@@ -8,7 +8,7 @@ Download the file [scripts/pdf-viewer.patch](scripts/pdf-viewer.patch) to the ro
 Open a terminal in the project root and run the following commands:
 
 ```shell
-git apply pdf-viewer.patch
+git apply --3way pdf-viewer.patch
 ```
 ## 3. Translations
 There might be some issues in the translation files (`en`, `es`, and `pt-br`), which you may need to fix manually.  
