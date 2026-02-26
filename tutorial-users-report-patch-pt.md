@@ -1,8 +1,7 @@
+
 # Tutorial - Relatório de Atividades de Usuários no DSpace
 
 Este patch implementa um relatório estatístico que permite ao administrador visualizar um resumo geral das métricas do repositório, incluindo a quantidade total de usuários, envios, revisões, aprovações, rejeições e retiradas.
-
-
 
 ----------
 
@@ -10,7 +9,7 @@ Este patch implementa um relatório estatístico que permite ao administrador vi
 
 Faça o download do arquivo `users-report-8c.diff` (localizado na pasta `scripts/`) para o diretório raiz da sua instalação do DSpace (código-fonte do backend). Abra um terminal na raiz do projeto e execute o seguinte comando:
 
-Bash
+
 
 ```
 git apply --reject --whitespace=fix users-report-8c.diff
@@ -21,7 +20,7 @@ git apply --reject --whitespace=fix users-report-8c.diff
 
 Após aplicar o patch com sucesso, rode o comando do Maven para compilar o projeto:
 
-Bash
+
 
 ```
 mvn clean package
@@ -30,7 +29,7 @@ mvn clean package
 
 Assim que a compilação finalizar, navegue até a pasta do instalador gerado e execute a atualização via Ant:
 
-Bash
+
 
 ```
 cd dspace/target/dspace-installer
@@ -46,10 +45,28 @@ Por fim, **reinicie o seu servidor** (por exemplo, o Tomcat).
 
 Agora, faça o download do arquivo correspondente ao frontend para o diretório raiz da sua instalação do DSpace Angular. Abra um terminal na raiz do projeto Angular e execute o seguinte comando:
 
-Bash
+
 
 ```
 git apply --reject --whitespace=fix users-report-front-8c.diff
+
+```
+
+Após aplicar o patch, instale as novas dependências executando:
+
+
+
+```
+npm install
+
+```
+
+Caso a instalação não funcione ou apresente algum problema, instale a biblioteca de gráficos especificamente rodando:
+
+
+
+```
+npm install apexcharts
 
 ```
 

@@ -9,7 +9,7 @@ Este parche implementa un reporte estadístico que permite al administrador visu
 
 Descarga el archivo `users-report-8c.diff` (ubicado en la carpeta `scripts/`) al directorio raíz de tu instalación de DSpace (código fuente del backend). Abre una terminal en la raíz del proyecto y ejecuta el siguiente comando:
 
-Bash
+
 
 ```
 git apply --reject --whitespace=fix users-report-8c.diff
@@ -20,7 +20,7 @@ git apply --reject --whitespace=fix users-report-8c.diff
 
 Después de aplicar el parche con éxito, ejecuta el comando de Maven para compilar el proyecto:
 
-Bash
+
 
 ```
 mvn clean package
@@ -29,7 +29,7 @@ mvn clean package
 
 Una vez que finalice la compilación, navega hasta la carpeta del instalador generado y ejecuta la actualización a través de Ant:
 
-Bash
+
 
 ```
 cd dspace/target/dspace-installer
@@ -41,14 +41,33 @@ Finalmente, **reinicia tu servidor** (por ejemplo, Tomcat).
 
 ----------
 
+
 ## 3. Aplicando el Parche en el Frontend (DSpace Angular)
 
 Ahora, descarga el archivo correspondiente al frontend en el directorio raíz de tu instalación de DSpace Angular. Abre una terminal en la raíz del proyecto Angular y ejecuta el siguiente comando:
 
-Bash
+
 
 ```
 git apply --reject --whitespace=fix users-report-front-8c.diff
+
+```
+
+Una vez aplicado el parche, instala las nuevas dependencias ejecutando:
+
+
+
+```
+npm install
+
+```
+
+En caso de que la instalación anterior falle o presente problemas, instala específicamente la librería de gráficos ejecutando:
+
+
+
+```
+npm install apexcharts
 
 ```
 
