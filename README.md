@@ -11,6 +11,7 @@ Repositorio mantenido por **LA Referencia** y el **Ibict (Instituto Brasileño d
 - [Agregar boton de citacion](agregar-boton-de-citacion-es.md)
 - [Agregar metadatos en DSpace](add-metadado-dspace-es.md)
 - [Exportación de estadísticas desde Solr](dspace4-solr-export-statistics-es.md)
+- [Parche users-report](tutorial-users-report-patch-es.md)
 
 ## 🛠️ Sobre el repositorio
 
@@ -48,6 +49,7 @@ Repositório mantido pela **LA Referencia** e pelo **Ibict (Instituto Brasileiro
 - [Add Botao de citação](add-botao-de-citacao-pt.md)
 - [Add Metadados no DSpace](add-metadado-dspace-pt.md)
 - [Exportação de estatísticas do Solr](dspace4-solr-export-statistics-pt.md)
+- [Patch users-report](tutorial-users-report-patch-pt.md)
 
 ## 🛠️ Sobre o repositório
 
