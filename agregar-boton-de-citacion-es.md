@@ -20,9 +20,10 @@ y ejecuta:
 > Si ocurren conflictos durante la aplicación del parche,
 > es responsabilidad de quien lo aplica resolverlos manualmente.
 
+Descargue el parche desde https://patch-diff.githubusercontent.com/raw/DSpace/DSpace/pull/11451.patch al directorio raíz de su instalación de DSpace (código fuente del backend). Abra una terminal en la raíz del proyecto y ejecute el siguiente comando:
+
 ``` bash
-cd <dspace-source>
-git apply -v <(curl -sL "https://patch-diff.githubusercontent.com/raw/DSpace/DSpace/pull/11451.patch")
+git apply --3way 11451.patch
 ```
 
 **Paso 2:** Si el parche se aplica correctamente, continúa:
@@ -54,9 +55,15 @@ ant update
 > De la misma manera, si ocurren conflictos durante la
 > aplicación del parche, deben resolverse manualmente.
 
+Descargue el parche desde https://patch-diff.githubusercontent.com/raw/DSpace/dspace-angular/pull/4779.patch al directorio raíz de su instalación de dspace-angular (código fuente del frontend). Abra una terminal en la raíz del proyecto y ejecute el siguiente comando:
+
 ``` bash
-cd <dspace-angular-source>
-git apply -v <(curl -sL "https://patch-diff.githubusercontent.com/raw/DSpace/dspace-angular/pull/4779.patch")
+git apply --3way 4779.patch
+```
+
+**Paso 2:** Si el parche se aplica correctamente, continúa:
+
+``` bash
 git add . && git commit -m "Agrega botón de cita bibliográfica"
 ```
 
