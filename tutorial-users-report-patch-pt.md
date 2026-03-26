@@ -7,12 +7,12 @@ Este patch implementa um relatório estatístico que permite ao administrador vi
 
 ## 1. Aplicando o Patch no Backend
 
-Faça o download do arquivo `users-report-8c.diff` (localizado na pasta `scripts/`) para o diretório raiz da sua instalação do DSpace (código-fonte do backend). Abra um terminal na raiz do projeto e execute o seguinte comando:
+Faça o download do arquivo `users-report-backend.diff` (localizado na pasta `scripts/`) para o diretório raiz da sua instalação do DSpace (código-fonte do backend). Abra um terminal na raiz do projeto e execute o seguinte comando:
 
 
 
 ```
-git apply --reject --whitespace=fix users-report-8c.diff
+git apply --reject --whitespace=fix users-report-backend.diff
 
 ```
 
@@ -43,12 +43,12 @@ Por fim, **reinicie o seu servidor** (por exemplo, o Tomcat).
 
 ## 3. Aplicando o Patch no Frontend (DSpace Angular)
 
-Agora, faça o download do arquivo correspondente ao frontend para o diretório raiz da sua instalação do DSpace Angular. Abra um terminal na raiz do projeto Angular e execute o seguinte comando:
+Agora, faça o download do arquivo correspondente ao frontend (`users-report-frontend.diff`) para o diretório raiz da sua instalação do DSpace Angular. Abra um terminal na raiz do projeto Angular e execute o seguinte comando:
 
 
 
 ```
-git apply --reject --whitespace=fix users-report-front-8c.diff
+git apply --reject --whitespace=fix users-report-frontend.diff
 
 ```
 
