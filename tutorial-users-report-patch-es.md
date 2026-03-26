@@ -7,12 +7,12 @@ Este parche implementa un reporte estadístico que permite al administrador visu
 
 ## 1. Aplicando el Parche en el Backend
 
-Descarga el archivo `users-report-8c.diff` (ubicado en la carpeta `scripts/`) al directorio raíz de tu instalación de DSpace (código fuente del backend). Abre una terminal en la raíz del proyecto y ejecuta el siguiente comando:
+Descarga el archivo `users-report-backend.diff` (ubicado en la carpeta `scripts/`) al directorio raíz de tu instalación de DSpace (código fuente del backend). Abre una terminal en la raíz del proyecto y ejecuta el siguiente comando:
 
 
 
 ```
-git apply --reject --whitespace=fix users-report-8c.diff
+git apply --reject --whitespace=fix users-report-backend.diff
 
 ```
 
@@ -44,12 +44,12 @@ Finalmente, **reinicia tu servidor** (por ejemplo, Tomcat).
 
 ## 3. Aplicando el Parche en el Frontend (DSpace Angular)
 
-Ahora, descarga el archivo correspondiente al frontend en el directorio raíz de tu instalación de DSpace Angular. Abre una terminal en la raíz del proyecto Angular y ejecuta el siguiente comando:
+Ahora, descarga el archivo correspondiente al frontend (`users-report-frontend.diff`) en el directorio raíz de tu instalación de DSpace Angular. Abre una terminal en la raíz del proyecto Angular y ejecuta el siguiente comando:
 
 
 
 ```
-git apply --reject --whitespace=fix users-report-front-8c.diff
+git apply --reject --whitespace=fix users-report-frontend.diff
 
 ```
 
