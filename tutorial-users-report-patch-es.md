@@ -1,5 +1,5 @@
 
-# Tutorial - Reporte de Actividades de Usuarios en DSpace
+# Tutorial - Cómo agregar el informe de actividad del usuario a DSpace
 
 Este parche implementa un reporte estadístico que permite al administrador visualizar un resumen general de las métricas del repositorio, incluyendo la cantidad total de usuarios, envíos, revisiones, aprobaciones, rechazos y retiros.
 
